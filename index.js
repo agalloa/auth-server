@@ -1,3 +1,10 @@
-//node index.js -> comando para ejecutar el proyecto
+const express = require('express');
 
-console.log('Hola desde node');
+
+// Creación del servidor de express
+const app = express();
+
+
+app.listen( 4000, () => {
+    console.log( `Servidor Corriendo en el puerto ${ 4000 }`);
+});
